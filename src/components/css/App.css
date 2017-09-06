@@ -1,0 +1,51 @@
+.App {
+  background: white;
+  background: -webkit-linear-gradient(white, #D8D8D8);
+  background: -o-linear-gradient(white, #D8D8D8);
+  background: -moz-linear-gradient(white, #D8D8D8);
+  background: linear-gradient(white, #D8D8D8);
+  font-family: Verdana;
+}
+
+.Container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.signature-pad{
+  border: solid 0.2px;
+  width: 300px;
+  height: 154px;
+}
+.App-logo {
+  height: 80px;
+}
+
+.App-header {
+  text-align: left;
+  background-color: #FAFAFAX;
+  height: 100px;
+  padding: 20px;
+  color: black;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer .hr {
+  height: 2px;
+  width: 90%;
+  background-color: #FF6600;
+}
+
+.App-intro {
+  font-size: large;
+}
