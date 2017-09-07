@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import InputJuntaItem from '../items/InputJuntaItem.js';
 import InputTextAreaItem from '../items/InputTextAreaItem';
+import InputFirma from './InputFirma.js';
+//import '../css/InputJunta.css';
 
 class InputJunta extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: "",
+      value: [],
       label:""
     };
     this.onSubmit = this.onSubmit.bind(this);
@@ -37,7 +39,6 @@ class InputJunta extends Component {
       <div className="Form">
         <form className="Form-form">
         <InputJuntaItem
-          className="reunion"
           labelText="Reunión / Entrenamiento"
           inputType="text"
           ref="reunion"/><br/>
@@ -66,11 +67,16 @@ class InputJunta extends Component {
             labelText="Nombre del responsable"
             ref="nombre_resp"/><br/>
 
-        <button
-          type="button"
-          className="btn btn-primary"
-          onSubmit={this.props.onSubmit}>Aceptar</button><br/>
 
+            <div className="signature-pad" style={{ backgroundColor: "#fff", marginBottom: '50%'}}>
+              <InputFirma/>
+            </div>
+
+            <button
+              type="button"
+              className="btn btn-primary"
+              onSubmit={this.props.onSubmit}>Aceptar
+            </button>
 
         <label className="Form-label">{ this.state.label }</label>
         </form>

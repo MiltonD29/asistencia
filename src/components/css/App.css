@@ -15,7 +15,8 @@
 }
 
 .signature-pad{
-  border: solid 0.2px;
+  border: solid 0.4px;
+  color: #A4A4A4;
   width: 300px;
   height: 154px;
 }
